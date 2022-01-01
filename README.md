@@ -9,7 +9,7 @@ So what does this core algorithm do? It automatically migrates manually placed C
 What you see in the above screenshot of the CRE is a normal side-by-side diff of source code augmented with Codemarks. Each colored section in the left side of the screenshot is a Codemark and is manually placed by a security expert.
 
 Because source code changes rapidly, we want to make sure that the Codemarks are automatically migrated to new versions of the source code. The manually placed Codemarks on the left side of the screenshot are "migrated" by an algorithm and automatically placed in the new file (right side of the screenshot). Some Codemarks are impossible to migrate because of changes to the source code. These Codemarks should be moved as close as possible to wherever they are probably relevant and marked with a merge conflict. This way, a human security expert can easily identify which Codemarks need manually review and fix them accordingly.
-
+%%%code_mark1
 The migration of Codemarks is deceptively difficult and our current algorithm can always be improved. Hence, it makes for a great interview challenge. **Good luck!**
 
 ## The challenge
@@ -44,7 +44,7 @@ Feel free to improve ANYTHING you see that could be improved (pure bonus). Some 
 -   Being independent, but never stubborn, so ask help if you are stuck to prevent wasting time.
 
 ### test-repository.git
-
+%%%code_mark2
 This the test repository in its bare form (`git clone --bare`). If you want to make changes to this test repository, or add file changes to test your algorithm you can run `git clone test-repository.git`.
 
 Now you can make changes to in the `test-repository` folder and do your thing (`git commit -a --amend --no-edit` is your friend). After, you can run `git push` (`--force` probably) to put it back into the bare `test-repository.git`.
@@ -52,7 +52,7 @@ Now you can make changes to in the `test-repository` folder and do your thing (`
 **TIP: Make sure to run `git gc --aggressive` within `test-repository.git` to pack it tight before committing to the interview challenge repository.**
 
 ## Reading materials
-
+%%%code_mark3
 You may need to brush up you Python and/or Git skills. Feel free to do so, below you find relevant links to get you started on your search.
 
 ### Python
@@ -65,7 +65,7 @@ You may need to brush up you Python and/or Git skills. Feel free to do so, below
 -   TypedDict https://adamj.eu/tech/2021/05/10/python-type-hints-how-to-use-typeddict/ _(maybe pydantic models are better)_
 -   Pydantic https://pydantic-docs.helpmanual.io/usage/mypy/
 -   https://dropbox.tech/application/our-journey-to-type-checking-4-million-lines-of-python
-
+%%%code_mark4
 ### Git saeedeh
 
 -   On how git should track stuff by Linus: https://web.archive.org/web/20160206150253/http://article.gmane.org/gmane.comp.version-control.git/217
