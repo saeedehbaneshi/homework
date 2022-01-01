@@ -4,8 +4,8 @@ This repository contains a test suite and the beginning of our core algorithm us
 
 So what does this core algorithm do? It automatically migrates manually placed Codemarks (annotations over source code) from one version of a text file to the next.
 
-![Codemarks side-by-side](example-diff-codemarks.png)
-
+![Codemarks side-by-side](example-saeedeh-diff-codemarks.png)
+#add by saeedeh
 What you see in the above screenshot of the CRE is a normal side-by-side diff of source code augmented with Codemarks. Each colored section in the left side of the screenshot is a Codemark and is manually placed by a security expert.
 
 Because source code changes rapidly, we want to make sure that the Codemarks are automatically migrated to new versions of the source code. The manually placed Codemarks on the left side of the screenshot are "migrated" by an algorithm and automatically placed in the new file (right side of the screenshot). Some Codemarks are impossible to migrate because of changes to the source code. These Codemarks should be moved as close as possible to wherever they are probably relevant and marked with a merge conflict. This way, a human security expert can easily identify which Codemarks need manually review and fix them accordingly.
@@ -17,7 +17,7 @@ The migration of Codemarks is deceptively difficult and our current algorithm ca
 Your goal is to implement this algorithm in `codean/codemark.py` and test your solution using `python test.py`. This runs pytest on the tests defined in `tests` folder and uses additional test data from `test-codemarks.yaml`.
 
 Please note that you should use patch information from Git first. If you have time to spare and you can improve the algorithm using pattern matching and other heuristics, go for it, but we do not expect you to do this.
-
+#add by saeedeh
 P.S. You will need Python 3.9+ and a virtual environment. Use `virtualenv venv`, activate said virtual environment and `pip install -r requirements.txt` to get started!
 
 ### Bonus points
@@ -66,7 +66,7 @@ You may need to brush up you Python and/or Git skills. Feel free to do so, below
 -   Pydantic https://pydantic-docs.helpmanual.io/usage/mypy/
 -   https://dropbox.tech/application/our-journey-to-type-checking-4-million-lines-of-python
 
-### Git
+### Git saeedeh
 
 -   On how git should track stuff by Linus: https://web.archive.org/web/20160206150253/http://article.gmane.org/gmane.comp.version-control.git/217
 -   What is exactly stored: https://stackoverflow.com/questions/20666331/how-git-branches-and-tags-are-stored-in-disks/20800756#20800756
