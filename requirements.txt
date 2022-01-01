@@ -1,0 +1,11 @@
+# If using Python 3.10 on windows, you should use the following line instead of pygit2 from pypi
+# https://ci.appveyor.com/api/buildjobs/7m5r36ir25ucteeq/artifacts/dist%2Fpygit2-1.7.0-cp310-cp310-win_amd64.whl
+
+pygit2==1.*
+pydantic==1.*
+ruamel.yaml==0.*
+
+# Testing
+pytest==6.*
+pytest-cov==3.*
+pytest-mypy==0.*
